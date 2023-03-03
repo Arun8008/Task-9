@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy</title>
+	<script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+	<style>
+		.container{
+			width:300px;
+			box-sizing:border-box;
+			padding:20px 20px 0 20px;
+			cursor:pointer;
+		}
+		.container:hover{
+			box-shadow:0 0 10px #ccc;
+		}
+		.container:hover .btn{
+			display:block;
+			opacity:1;
+			visibility:visible;
+		}
+		<!-- .added{ -->
+		   <!-- display:none; -->
+		<!-- } -->
+		<!-- .added:hover{ -->
+		    <!-- display:inline; -->
+		<!-- } -->
+		img{
+			width:100%;
+			height:auto;
+		}
+		h3{
+			font-size:16px;
+			margin:10px 0;
+		}
+		.details{
+			display:flex;
+			flex-wrap:wrap;
+			text-align:center;
+			justify-content:space-between;
+		}
+		p{
+			margin:5px 0;
+			color:#686b78;
+			padding:2px 0;
+			font-size:14px;
+		}
+		.col-lg-1{
+			width:10%;
+		}
+		.col-lg-2{
+			width:20%;
+		}
+		.col-lg-4{
+			width:40%;
+		}
+		.review{
+			background-color:#48c479;
+			color:white;
+			
+		}
+		.delivery{
+			border-top: 1px solid #e9e9eb;
+			padding:8px 0;
+		}
+		.delivery p{
+			color:#8a584b;
+			font-size:14px;
+			font-weight:600;
+		}
+		iconify-icon{
+			font-size:15px;
+		}
+		.btn{
+			border-top: 1px solid #e9e9eb;
+			padding:8px 0;
+			text-align:center;
+			display:none;
+			opacity:0;
+			visibility:hidden;
+			margin-top:10px;
+		}
+		a{	
+			font-size:16px;
+			text-decoration:none;
+			color:#5d8ed5;
+		}
+		a:hover{
+			color:#93959f;
+		}
+		.added button{
+		  padding:5px;
+		  border:none;
+		  background-color:#fff;
+		  color:#60b246;
+		  font-size:20px;
+		  font-weight:600;
+		  border-radius:5px;
+		}
+		.added input{
+		  padding:6px 0px;
+		  border:1px solid #60b246;
+		  background-color:#fff;
+		  color:#60b246;
+		  font-size:14px;
+		  text-align:center;
+		}
+	</style>
+</head>
+<body>
+	<section class="container">
+		<img src="image/biryani.jpg">
+		<h3>SS Hyderabad Briyani</h3>
+		<p>Biryani, North Indian</p>
+		<div class="details">
+			<div class="col-lg-2">
+				<p class="review"><iconify-icon icon="material-symbols:star-rate"></iconify-icon> 4.0</p>
+			</div>
+			<div class="col-lg-1">
+				<p>.</p>
+			</div>
+			<div class="col-lg-2">
+				<p>25 min<p>
+			</div>
+			<div class="col-lg-1">
+				<p>.</p>
+			</div>
+			<div class="col-lg-4">
+				<p>₹350 FOR TWO</p>
+			</div>
+		</div>
+			<div class="delivery">
+				<p><iconify-icon icon="bxs:offer"></iconify-icon> 40% off on all orders</p>
+			
+				<p><iconify-icon icon="bxs:offer"></iconify-icon>FREE DELIVERY</p>
+			</div>
+			
+		<div class="added">
+		   <button id="sub"><iconify-icon icon="ri:subtract-fill"></iconify-icon></button>
+			<input type="text" value="0" id="inp" disabled>
+			<button id="add"><iconify-icon icon="material-symbols:add"></iconify-icon></button>
+		</div>
+		
+		<div class="btn">
+			<p><a href="">Quick View</a></p>
+		<div>
+	
+	</section>
+	<section>
+		<div id="right">
+		</div>
+	</section>
+	</section>
+	<script src="main.js"></script>
+</body>
+</html>
